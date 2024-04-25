@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    outline: none;
+}
+:root {
+        --bg-color: #5c2018;
+        --second-bg-color: #bc4639;
+        --text-color: #f3e0dc;
+        --second-color: #d4a59a;
+        --main-color: #f5f5dc;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3e0dc8e;  
+}
+
+.calculator {
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: inset 5px 5px 12px rgba(0, 0, 0, 0.5), 5px 5px 12px rgba(0,0,0,0.20);
+    display: grid;
+    grid-template-columns: repeat(4,70px);
+    background-color: var(--text-color);  
+}
+
+input {
+  grid-column: span 4;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 20px;
+  box-shadow: inset 2px 5px 10px rgba(5, 5, 5, 0.65);
+  height: 70px;
+  width: 265px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 15px;
+  text-align: right;
+  font-size: 40px;
+}
+
+button {
+    height: 40px;
+    width: 40px;
+    border-radius: 25% 40%;
+    background-color: #ffffff;
+    box-shadow: -3px -3px 7px rgba(255, 255, 255, 0.308), 5px 5px 12px rgba(0, 0, 0, 0.5);
+    margin: 8px;
+    margin-left: 15px;
+    transition: all .12s ease;   
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+    border: 1px solid #8F9092;
+    transition: all 0.2s ease;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    color: #606060;
+    text-shadow: 0 1px #fff;
+  }
+  
+  button:hover {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+  }
+  
+  button:active {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+    color: rgb(255, 0, 0);
+  }
+  
+  
+  
